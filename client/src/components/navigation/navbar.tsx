@@ -48,7 +48,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <h1 className="text-xl font-bold gradient-text">Portfolio</h1>
+            <h1 className="text-2xl font-black gradient-text tracking-tight">MacMittens</h1>
           </div>
 
           {/* Desktop Navigation */}

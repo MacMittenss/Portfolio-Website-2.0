@@ -49,38 +49,36 @@ export default function About() {
           }`}
         >
           <div className="text-center mb-16">
-            <Badge variant="outline" className="mb-4">
+            <Badge variant="outline" className="mb-6 bg-primary/10 text-primary border-primary/30">
               About Me
             </Badge>
-            <h2 className="text-4xl font-bold mb-6">
-              Passionate About <span className="gradient-text">Technology</span>
+            <h2 className="text-5xl font-black mb-8 font-['Poppins']">
+              Crafting Digital <span className="gradient-text">Excellence</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              I'm a dedicated full-stack developer with a passion for creating
-              exceptional digital experiences. With expertise in modern web
-              technologies, I bring ideas to life through clean code and
-              thoughtful design.
+              Dedicated developer with a passion for transforming complex problems 
+              into elegant solutions. I specialize in creating scalable applications 
+              that deliver exceptional user experiences.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
             <div className="space-y-6">
-              <h3 className="text-2xl font-semibold mb-4">My Journey</h3>
-              <p className="text-muted-foreground leading-relaxed">
-                Started my development journey 5 years ago, I've worked with
-                startups and established companies to build scalable web
-                applications. I specialize in React, Node.js, and modern web
-                technologies.
+              <h3 className="text-3xl font-bold mb-6 text-primary">My Journey</h3>
+              <p className="text-muted-foreground leading-relaxed text-lg">
+                Over 5 years of experience building innovative web applications 
+                for startups and enterprise clients. I focus on creating 
+                performant, scalable solutions using cutting-edge technologies.
               </p>
-              <p className="text-muted-foreground leading-relaxed">
-                When I'm not coding, you'll find me exploring new technologies,
-                contributing to open source projects, or sharing knowledge with
-                the developer community.
+              <p className="text-muted-foreground leading-relaxed text-lg">
+                Passionate about clean code, modern architecture, and staying 
+                at the forefront of web development trends. Always learning, 
+                always building.
               </p>
               
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-3 pt-4">
                 {["React", "TypeScript", "Node.js", "Python", "PostgreSQL", "AWS"].map((tech) => (
-                  <Badge key={tech} variant="secondary">
+                  <Badge key={tech} className="bg-primary/20 text-primary border-primary/30 hover:bg-primary hover:text-primary-foreground transition-colors">
                     {tech}
                   </Badge>
                 ))}

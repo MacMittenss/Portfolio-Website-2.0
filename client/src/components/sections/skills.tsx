@@ -58,14 +58,14 @@ export default function Skills() {
           }`}
         >
           <div className="text-center mb-16">
-            <Badge variant="outline" className="mb-4">
+            <Badge variant="outline" className="mb-6 bg-primary/10 text-primary border-primary/30">
               Skills & Technologies
             </Badge>
-            <h2 className="text-4xl font-bold mb-6">
-              My <span className="gradient-text">Technical Stack</span>
+            <h2 className="text-5xl font-black mb-8 font-['Poppins']">
+              Technical <span className="gradient-text">Expertise</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              I work with modern technologies to build scalable and performant applications
+              Mastering modern technologies to deliver exceptional digital solutions
             </p>
           </div>
 

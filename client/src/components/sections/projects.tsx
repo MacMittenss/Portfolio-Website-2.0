@@ -103,14 +103,14 @@ export default function Projects() {
           }`}
         >
           <div className="text-center mb-16">
-            <Badge variant="outline" className="mb-4">
+            <Badge variant="outline" className="mb-6 bg-primary/10 text-primary border-primary/30">
               Portfolio
             </Badge>
-            <h2 className="text-4xl font-bold mb-6">
+            <h2 className="text-5xl font-black mb-8 font-['Poppins']">
               Featured <span className="gradient-text">Projects</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Here are some of my recent projects that showcase my skills and experience
+              Explore my latest work showcasing innovation, technical expertise, and creative problem-solving
             </p>
           </div>
 

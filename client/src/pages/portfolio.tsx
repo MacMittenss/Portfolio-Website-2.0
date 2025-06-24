@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { Github, Linkedin, Mail } from "lucide-react";
 import Navbar from "@/components/navigation/navbar";
 import Hero from "@/components/sections/hero";
 import About from "@/components/sections/about";
@@ -42,9 +43,31 @@ export default function Portfolio() {
         </section>
       </main>
       
-      <footer className="bg-card border-t py-8">
-        <div className="container mx-auto px-4 text-center text-muted-foreground">
-          <p>&copy; 2025 Portfolio. Built with React, TypeScript, and Tailwind CSS.</p>
+      <footer className="bg-card border-t border-grey-color/30 py-12">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col md:flex-row justify-between items-center">
+            <div className="mb-4 md:mb-0">
+              <h3 className="text-2xl font-black gradient-text mb-2">MacMittens</h3>
+              <p className="text-muted-foreground">Crafting exceptional digital experiences</p>
+            </div>
+            <div className="flex space-x-6">
+              <a href="https://github.com/MacMittenss" target="_blank" rel="noopener noreferrer" 
+                 className="text-muted-foreground hover:text-primary transition-colors">
+                <Github className="h-5 w-5" />
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
+                 className="text-muted-foreground hover:text-primary transition-colors">
+                <Linkedin className="h-5 w-5" />
+              </a>
+              <a href="mailto:contact@macmittens.com"
+                 className="text-muted-foreground hover:text-primary transition-colors">
+                <Mail className="h-5 w-5" />
+              </a>
+            </div>
+          </div>
+          <div className="border-t border-grey-color/30 mt-8 pt-8 text-center text-muted-foreground">
+            <p>&copy; 2025 MacMittens. Built with React, TypeScript, and modern web technologies.</p>
+          </div>
         </div>
       </footer>
     </div>

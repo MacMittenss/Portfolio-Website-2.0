@@ -13,8 +13,8 @@ const contactInfo = [
   {
     icon: Mail,
     label: "Email",
-    value: "hello@alexdeveloper.com",
-    href: "mailto:hello@alexdeveloper.com",
+    value: "contact@macmittens.com",
+    href: "mailto:contact@macmittens.com",
   },
   {
     icon: Phone,
@@ -25,7 +25,7 @@ const contactInfo = [
   {
     icon: MapPin,
     label: "Location",
-    value: "San Francisco, CA",
+    value: "Remote • Global",
     href: "#",
   },
 ];
@@ -34,7 +34,7 @@ const socialLinks = [
   {
     icon: Github,
     label: "GitHub",
-    href: "https://github.com",
+    href: "https://github.com/MacMittenss",
   },
   {
     icon: Linkedin,
@@ -96,14 +96,14 @@ export default function Contact() {
           }`}
         >
           <div className="text-center mb-16">
-            <Badge variant="outline" className="mb-4">
+            <Badge variant="outline" className="mb-6 bg-primary/10 text-primary border-primary/30">
               Get In Touch
             </Badge>
-            <h2 className="text-4xl font-bold mb-6">
-              Let's Work <span className="gradient-text">Together</span>
+            <h2 className="text-5xl font-black mb-8 font-['Poppins']">
+              Let's Build <span className="gradient-text">Something Amazing</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Have a project in mind? I'd love to hear about it. Let's discuss how we can bring your ideas to life.
+              Ready to transform your vision into reality? Let's collaborate and create exceptional digital experiences together.
             </p>
           </div>
 
@@ -250,8 +250,8 @@ export default function Contact() {
                   <p className="text-muted-foreground mb-4">
                     I'm available for freelance work and full-time opportunities.
                   </p>
-                  <Button className="rounded-full" asChild>
-                    <a href="mailto:hello@alexdeveloper.com">
+                  <Button className="bg-primary hover:bg-primary/90 text-primary-foreground" asChild>
+                    <a href="mailto:contact@macmittens.com">
                       Get Started
                     </a>
                   </Button>
