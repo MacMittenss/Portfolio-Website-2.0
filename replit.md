@@ -103,10 +103,14 @@ The schema includes three main entities:
 ```
 Changelog:
 - June 24, 2025. Initial setup
+- June 24, 2025. Modernized portfolio with dark theme from original design
+- June 24, 2025. Restored original "Header home" section with Marcus Prater branding
 ```
 
 ## User Preferences
 
 ```
 Preferred communication style: Simple, everyday language.
+Header preference: Keep original "Header home" section from repository unchanged with minimal modifications.
+Branding: Marcus Prater, Front End Developer with typewriter effect showing "< Front End Developer />" and "< Web Content Editor />".
 ```

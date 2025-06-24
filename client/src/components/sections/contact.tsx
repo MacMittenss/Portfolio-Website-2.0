@@ -13,8 +13,8 @@ const contactInfo = [
   {
     icon: Mail,
     label: "Email",
-    value: "contact@macmittens.com",
-    href: "mailto:contact@macmittens.com",
+    value: "marcprater@example.com",
+    href: "mailto:marcprater@example.com",
   },
   {
     icon: Phone,
@@ -251,7 +251,7 @@ export default function Contact() {
                     I'm available for freelance work and full-time opportunities.
                   </p>
                   <Button className="bg-primary hover:bg-primary/90 text-primary-foreground" asChild>
-                    <a href="mailto:contact@macmittens.com">
+                    <a href="mailto:marcprater@example.com">
                       Get Started
                     </a>
                   </Button>
