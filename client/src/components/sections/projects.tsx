@@ -94,7 +94,7 @@ export default function Projects() {
   const featuredProjects = projects.filter((project) => project.featured);
 
   return (
-    <section className="py-20 section-bg">
+    <section className="py-20" style={{ backgroundColor: 'black' }}>
       <div className="container mx-auto px-4">
         <div
           ref={ref}

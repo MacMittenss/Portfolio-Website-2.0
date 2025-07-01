@@ -40,7 +40,7 @@ export default function About() {
   });
 
   return (
-    <section className="py-20 section-bg">
+    <section className="py-20" style={{ backgroundColor: 'black' }}>
       <div className="container mx-auto px-4">
         <div
           ref={ref}
@@ -56,9 +56,7 @@ export default function About() {
               Crafting Digital <span className="gradient-text">Excellence</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              Dedicated developer with a passion for transforming complex problems 
-              into elegant solutions. I specialize in creating scalable applications 
-              that deliver exceptional user experiences.
+              Dedicated developer with a passion for transforming complex problems into elegant solutions. Crafting visually stunning and seamlessly functional front-end wonders, meticulously translating UI/UX blueprints into immersive web and mobile experiences.
             </p>
           </div>
 
@@ -66,18 +64,14 @@ export default function About() {
             <div className="space-y-6">
               <h3 className="text-3xl font-bold mb-6 text-primary">My Journey</h3>
               <p className="text-muted-foreground leading-relaxed text-lg">
-                Over 5 years of experience building innovative web applications 
-                for startups and enterprise clients. I focus on creating 
-                performant, scalable solutions using cutting-edge technologies.
+                With 3 years of experience as a self-taught software engineer with a passion for innovation, I craft responsive, intuitive, and visually engaging front-end experiences that not only meet but exceed expectations. I'm well-versed in HTML, CSS, JavaScript, and React.js to deepen my skills in dynamic UI development.
               </p>
               <p className="text-muted-foreground leading-relaxed text-lg">
-                Passionate about clean code, modern architecture, and staying 
-                at the forefront of web development trends. Always learning, 
-                always building.
+                With a sharp eye for detail and a constant drive to stay current with modern technologies, I'm committed to delivering high-quality, user-focused solutions.
               </p>
               
               <div className="flex flex-wrap gap-3 pt-4">
-                {["React", "TypeScript", "Node.js", "Python", "PostgreSQL", "AWS"].map((tech) => (
+                {["HTML", "CSS", "SASS", "JavaScript", "React"].map((tech) => (
                   <Badge key={tech} className="bg-primary/20 text-primary border-primary/30 hover:bg-primary hover:text-primary-foreground transition-colors">
                     {tech}
                   </Badge>
@@ -85,22 +79,28 @@ export default function About() {
               </div>
             </div>
 
-            <div className="grid grid-cols-2 gap-4">
-              {stats.map((stat, index) => (
-                <Card key={stat.label} className="text-center p-6 card-hover">
-                  <CardContent className="p-0">
-                    <div className="text-3xl font-bold gradient-text mb-2">
-                      <AnimatedCounter 
-                        target={stat.value} 
-                        isVisible={isIntersecting}
-                        delay={index * 100}
-                      />
-                      +
+            <div className="space-y-6">
+              <h3 className="text-2xl font-bold text-primary">My Tech Stack</h3>
+              <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
+                {["HTML", "CSS", "SASS", "JavaScript", "React"].map((tech, index) => (
+                  <div
+                    key={tech}
+                    className={`text-center p-6 rounded-lg bg-card/10 border border-primary/20 hover:border-primary/50 transition-all duration-300 ${
+                      isIntersecting ? "animate-scale-in" : "opacity-0"
+                    }`}
+                    style={{ animationDelay: `${index * 100}ms` }}
+                  >
+                    <div className="text-4xl mb-3">
+                      {tech === "HTML" && <span className="text-orange-500">🔧</span>}
+                      {tech === "CSS" && <span className="text-blue-500">🎨</span>}
+                      {tech === "SASS" && <span className="text-pink-500">⚡</span>}
+                      {tech === "JavaScript" && <span className="text-yellow-500">⚙️</span>}
+                      {tech === "React" && <span className="text-cyan-500">⚛️</span>}
                     </div>
-                    <p className="text-sm text-muted-foreground">{stat.label}</p>
-                  </CardContent>
-                </Card>
-              ))}
+                    <h4 className="font-semibold text-lg mb-2">{tech}</h4>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
 

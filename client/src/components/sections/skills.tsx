@@ -49,7 +49,7 @@ export default function Skills() {
   });
 
   return (
-    <section className="py-20">
+    <section className="py-20" style={{ backgroundColor: 'black' }}>
       <div className="container mx-auto px-4">
         <div
           ref={ref}
