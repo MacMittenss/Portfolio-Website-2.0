@@ -69,14 +69,6 @@ export default function About() {
               <p className="text-muted-foreground leading-relaxed text-lg">
                 With a sharp eye for detail and a constant drive to stay current with modern technologies, I'm committed to delivering high-quality, user-focused solutions.
               </p>
-              
-              <div className="flex flex-wrap gap-3 pt-4">
-                {["HTML", "CSS", "SASS", "JavaScript", "React"].map((tech) => (
-                  <Badge key={tech} className="bg-primary/20 text-primary border-primary/30 hover:bg-primary hover:text-primary-foreground transition-colors">
-                    {tech}
-                  </Badge>
-                ))}
-              </div>
             </div>
 
             <div className="space-y-6">
@@ -98,6 +90,11 @@ export default function About() {
                       {tech === "React" && <span className="text-cyan-500">⚛️</span>}
                     </div>
                     <h4 className="font-semibold text-lg mb-2">{tech}</h4>
+                    <div className="mt-2">
+                      <Badge className="bg-primary/20 text-primary border-primary/30 hover:bg-primary hover:text-primary-foreground transition-colors text-xs">
+                        {tech}
+                      </Badge>
+                    </div>
                   </div>
                 ))}
               </div>
