@@ -74,25 +74,24 @@ export default function About() {
 
             <div className="space-y-6">
               <h3 className="text-2xl font-bold text-primary">My Tech Stack</h3>
-              <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 md:gap-6">
                 {["HTML", "CSS", "SASS", "JavaScript", "React"].map((tech, index) => (
                   <div
                     key={tech}
-                    className={`text-center p-6 rounded-lg bg-card/10 border border-primary/20 hover:border-primary/50 transition-all duration-300 ${
+                    className={`flex flex-col items-center justify-center p-4 md:p-6 rounded-lg bg-card/10 border border-primary/20 hover:border-primary/50 transition-all duration-300 min-h-[120px] ${
                       isIntersecting ? "animate-scale-in" : "opacity-0"
                     }`}
                     style={{ animationDelay: `${index * 100}ms` }}
                   >
-                    <div className="text-4xl mb-3">
-                      {tech === "HTML" && <SiHtml5 className="text-orange-500 mx-auto" />}
-                      {tech === "CSS" && <SiCss3 className="text-blue-500 mx-auto" />}
-                      {tech === "SASS" && <SiSass className="text-pink-500 mx-auto" />}
-                      {tech === "JavaScript" && <SiJavascript className="text-yellow-500 mx-auto" />}
-                      {tech === "React" && <SiReact className="text-cyan-500 mx-auto" />}
+                    <div className="text-3xl md:text-4xl mb-3 flex items-center justify-center">
+                      {tech === "HTML" && <SiHtml5 className="text-orange-500" />}
+                      {tech === "CSS" && <SiCss3 className="text-blue-500" />}
+                      {tech === "SASS" && <SiSass className="text-pink-500" />}
+                      {tech === "JavaScript" && <SiJavascript className="text-yellow-500" />}
+                      {tech === "React" && <SiReact className="text-cyan-500" />}
                     </div>
-                    <h4 className="font-semibold text-lg mb-2">{tech}</h4>
-                    <div className="mt-2">
-                      <Badge className="bg-primary/20 text-primary border-primary/30 hover:bg-primary hover:text-primary-foreground transition-colors text-xs">
+                    <div className="mt-auto">
+                      <Badge className="bg-primary/20 text-primary border-primary/30 hover:bg-primary hover:text-primary-foreground transition-colors text-xs whitespace-nowrap">
                         {tech}
                       </Badge>
                     </div>
