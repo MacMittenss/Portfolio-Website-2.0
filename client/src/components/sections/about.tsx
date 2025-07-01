@@ -3,6 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { Code, Palette, Zap, Users } from "lucide-react";
 import { useIntersectionObserver } from "@/hooks/use-intersection-observer";
 import AnimatedCounter from "@/components/ui/animated-counter";
+import { SiHtml5, SiCss3, SiSass, SiJavascript, SiReact } from "react-icons/si";
 
 const highlights = [
   {
@@ -83,11 +84,11 @@ export default function About() {
                     style={{ animationDelay: `${index * 100}ms` }}
                   >
                     <div className="text-4xl mb-3">
-                      {tech === "HTML" && <span className="text-orange-500">🔧</span>}
-                      {tech === "CSS" && <span className="text-blue-500">🎨</span>}
-                      {tech === "SASS" && <span className="text-pink-500">⚡</span>}
-                      {tech === "JavaScript" && <span className="text-yellow-500">⚙️</span>}
-                      {tech === "React" && <span className="text-cyan-500">⚛️</span>}
+                      {tech === "HTML" && <SiHtml5 className="text-orange-500 mx-auto" />}
+                      {tech === "CSS" && <SiCss3 className="text-blue-500 mx-auto" />}
+                      {tech === "SASS" && <SiSass className="text-pink-500 mx-auto" />}
+                      {tech === "JavaScript" && <SiJavascript className="text-yellow-500 mx-auto" />}
+                      {tech === "React" && <SiReact className="text-cyan-500 mx-auto" />}
                     </div>
                     <h4 className="font-semibold text-lg mb-2">{tech}</h4>
                     <div className="mt-2">
