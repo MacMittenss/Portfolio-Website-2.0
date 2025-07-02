@@ -22,7 +22,7 @@ export default function Hero() {
   return (
     <section id="header-home" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-background via-background to-background/50" style={{
       background: `linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://raw.githubusercontent.com/MacMittenss/Portfolio-Website/master/img/myshowcase1.jpg') no-repeat left center / cover`,
-      height: '95vh'
+      minHeight: '100vh'
     }}>
       <div className="container mx-auto px-4 relative z-10">
         <div
@@ -31,7 +31,7 @@ export default function Hero() {
             isIntersecting ? "animate-fade-in-up" : "opacity-0"
           }`}
         >
-          <div className="header-content text-left pt-[35%] text-light-color">
+          <div className="header-content text-left pt-[25%] text-light-color">
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-black mb-8 leading-tight font-['Poppins'] text-white">
               I Am Marcus, The{" "}
               <span className="block">
@@ -44,7 +44,7 @@ export default function Hero() {
             </h1>
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-6 items-start mt-8">
+          <div className="flex flex-col sm:flex-row gap-6 items-start mt-8 mb-16">
             <Button
               size="lg"
               onClick={scrollToProjects}
@@ -58,7 +58,7 @@ export default function Hero() {
               className="text-lg px-8 py-3 bg-primary hover:bg-primary/90 text-primary-foreground font-semibold transition-all duration-300"
               asChild
             >
-              <a href="mailto:marcprater@example.com">
+              <a href="mailto:scttjssy@gmail.com">
                 Hire Me!
               </a>
             </Button>
