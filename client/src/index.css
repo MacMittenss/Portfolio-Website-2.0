@@ -40,37 +40,37 @@
   --section-bg: hsl(43, 8%, 7%);
 }
 
-/* Light theme - GOAT.com inspired */
+/* Light theme - SoleGrid inspired */
 [data-theme="light"] {
-  --background: hsl(0, 0%, 100%);
-  --foreground: hsl(0, 0%, 9%);
-  --muted: hsl(0, 0%, 96%);
-  --muted-foreground: hsl(0, 0%, 45%);
+  --background: hsl(0, 0%, 96%);
+  --foreground: hsl(0, 0%, 11%);
+  --muted: hsl(0, 0%, 92%);
+  --muted-foreground: hsl(0, 0%, 40%);
   --popover: hsl(0, 0%, 100%);
-  --popover-foreground: hsl(0, 0%, 9%);
+  --popover-foreground: hsl(0, 0%, 11%);
   --card: hsl(0, 0%, 100%);
-  --card-foreground: hsl(0, 0%, 9%);
-  --border: hsl(0, 0%, 90%);
-  --input: hsl(0, 0%, 96%);
+  --card-foreground: hsl(0, 0%, 11%);
+  --border: hsl(0, 0%, 88%);
+  --input: hsl(0, 0%, 100%);
   --primary: hsl(25, 81%, 59%);
   --primary-foreground: hsl(0, 0%, 100%);
-  --secondary: hsl(0, 0%, 96%);
-  --secondary-foreground: hsl(0, 0%, 9%);
-  --accent: hsl(0, 0%, 96%);
-  --accent-foreground: hsl(0, 0%, 9%);
+  --secondary: hsl(0, 0%, 92%);
+  --secondary-foreground: hsl(0, 0%, 11%);
+  --accent: hsl(0, 0%, 92%);
+  --accent-foreground: hsl(0, 0%, 11%);
   --destructive: hsl(0, 84%, 60%);
   --destructive-foreground: hsl(0, 0%, 98%);
   --ring: hsl(25, 81%, 59%);
   
   /* Custom portfolio colors for light mode */
   --main-color: hsl(25, 81%, 59%);
-  --light-color: hsl(0, 0%, 9%);
+  --light-color: hsl(0, 0%, 11%);
   --medium-color: hsl(25, 60%, 45%);
-  --dark-color: hsl(0, 0%, 100%);
-  --grey-color: hsl(0, 0%, 45%);
+  --dark-color: hsl(0, 0%, 96%);
+  --grey-color: hsl(0, 0%, 40%);
   --gradient-start: hsl(25, 81%, 59%);
   --gradient-end: hsl(25, 60%, 45%);
-  --section-bg: hsl(0, 0%, 98%);
+  --section-bg: hsl(0, 0%, 100%);
 }
 
 /* Dark theme */

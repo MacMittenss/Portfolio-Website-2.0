@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import ThemeToggle from "@/components/ui/theme-toggle";
 import { Github, Linkedin, Mail, X } from "lucide-react";
-import { SheetClose } from "@/components/ui/sheet";
+import { SheetClose, SheetTitle, SheetDescription } from "@/components/ui/sheet";
 
 interface MobileMenuProps {
   navItems: Array<{ href: string; label: string }>;
@@ -12,6 +12,11 @@ interface MobileMenuProps {
 export default function MobileMenu({ navItems, onNavigate }: MobileMenuProps) {
   return (
     <div className="flex flex-col h-full">
+      <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
+      <SheetDescription className="sr-only">
+        Navigate through different sections of the portfolio
+      </SheetDescription>
+      
       <div className="flex items-center justify-between p-6">
         <h2 className="text-lg font-semibold gradient-text">Navigation</h2>
         <SheetClose asChild>
