@@ -1,31 +1,23 @@
-import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Badge } from "@/components/ui/badge";
-import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter } from "lucide-react";
+import { Mail, MapPin, Send, Github, Linkedin } from "lucide-react";
 import { useIntersectionObserver } from "@/hooks/use-intersection-observer";
-import { useToast } from "@/hooks/use-toast";
 
 const contactInfo = [
   {
     icon: Mail,
     label: "Email",
-    value: "marcprater@example.com",
-    href: "mailto:marcprater@example.com",
-  },
-  {
-    icon: Phone,
-    label: "Phone",
-    value: "+1 (555) 123-4567",
-    href: "tel:+15551234567",
+    value: "scttjssy@gmail.com",
+    href: "mailto:scttjssy@gmail.com",
   },
   {
     icon: MapPin,
     label: "Location",
-    value: "Remote • Global",
+    value: "Swedesboro, New Jersey",
     href: "#",
   },
 ];
@@ -39,52 +31,19 @@ const socialLinks = [
   {
     icon: Linkedin,
     label: "LinkedIn",
-    href: "https://linkedin.com",
+    href: "https://www.linkedin.com/in/marcusprater",
   },
   {
-    icon: Twitter,
-    label: "Twitter",
-    href: "https://twitter.com",
+    icon: Mail,
+    label: "Email",
+    href: "mailto:scttjssy@gmail.com",
   },
 ];
 
 export default function Contact() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    subject: "",
-    message: "",
-  });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const { toast } = useToast();
   const { ref, isIntersecting } = useIntersectionObserver({
     threshold: 0.1,
   });
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 2000));
-
-    toast({
-      title: "Message sent!",
-      description: "Thank you for your message. I'll get back to you soon.",
-    });
-
-    setFormData({ name: "", email: "", subject: "", message: "" });
-    setIsSubmitting(false);
-  };
-
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    setFormData((prev) => ({
-      ...prev,
-      [e.target.name]: e.target.value,
-    }));
-  };
 
   return (
     <section className="py-20" style={{ backgroundColor: 'black' }}>
@@ -114,15 +73,22 @@ export default function Contact() {
                 <CardTitle className="text-2xl">Send a Message</CardTitle>
               </CardHeader>
               <CardContent>
-                <form onSubmit={handleSubmit} className="space-y-6">
+                <form 
+                  method="POST" 
+                  data-netlify="true" 
+                  data-netlify-recaptcha="true" 
+                  name="contact"
+                  className="space-y-6"
+                >
+                  <input type="hidden" name="form-name" value="contact" />
+                  
                   <div className="grid md:grid-cols-2 gap-4">
                     <div>
                       <Label htmlFor="name">Name</Label>
                       <Input
                         id="name"
                         name="name"
-                        value={formData.name}
-                        onChange={handleChange}
+                        placeholder="Name"
                         required
                         className="mt-1"
                       />
@@ -133,24 +99,34 @@ export default function Contact() {
                         id="email"
                         name="email"
                         type="email"
-                        value={formData.email}
-                        onChange={handleChange}
+                        placeholder="Email Address"
                         required
                         className="mt-1"
                       />
                     </div>
                   </div>
                   
-                  <div>
-                    <Label htmlFor="subject">Subject</Label>
-                    <Input
-                      id="subject"
-                      name="subject"
-                      value={formData.subject}
-                      onChange={handleChange}
-                      required
-                      className="mt-1"
-                    />
+                  <div className="grid md:grid-cols-2 gap-4">
+                    <div>
+                      <Label htmlFor="subject">Subject</Label>
+                      <Input
+                        id="subject"
+                        name="subject"
+                        placeholder="Subject"
+                        required
+                        className="mt-1"
+                      />
+                    </div>
+                    <div>
+                      <Label htmlFor="phone">Phone Number</Label>
+                      <Input
+                        id="phone"
+                        name="phone"
+                        type="tel"
+                        placeholder="Phone Number"
+                        className="mt-1"
+                      />
+                    </div>
                   </div>
                   
                   <div>
@@ -159,19 +135,24 @@ export default function Contact() {
                       id="message"
                       name="message"
                       rows={6}
-                      value={formData.message}
-                      onChange={handleChange}
+                      placeholder="Enter Message"
                       required
                       className="mt-1"
                     />
                   </div>
 
+                  <div className="my-4">
+                    <div 
+                      className="g-recaptcha" 
+                      data-sitekey="6LdnkKEqAAAAAPvyqoRAmjXxvE6evlb5z-5Ol90Y"
+                    ></div>
+                  </div>
+
                   <Button
                     type="submit"
-                    disabled={isSubmitting}
                     className="w-full text-lg py-6 rounded-full"
                   >
-                    {isSubmitting ? "Sending..." : "Send Message"}
+                    Send Message
                     <Send className="ml-2 h-5 w-5" />
                   </Button>
                 </form>
@@ -251,7 +232,7 @@ export default function Contact() {
                     I'm available for freelance work and full-time opportunities.
                   </p>
                   <Button className="bg-primary hover:bg-primary/90 text-primary-foreground" asChild>
-                    <a href="mailto:marcprater@example.com">
+                    <a href="mailto:scttjssy@gmail.com">
                       Get Started
                     </a>
                   </Button>
