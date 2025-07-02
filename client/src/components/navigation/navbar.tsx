@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu, Github, Linkedin, Mail } from "lucide-react";
 import MobileMenu from "./mobile-menu";
+import ThemeToggle from "@/components/ui/theme-toggle";
 import { useScrollSpy } from "@/hooks/use-scroll-spy";
 
 const navItems = [
@@ -72,11 +73,12 @@ export default function Navbar() {
             ))}
           </div>
 
-          {/* Social Links */}
+          {/* Social Links & Theme Toggle */}
           <div className="hidden md:flex items-center space-x-4">
+            <ThemeToggle />
             <Button variant="ghost" size="icon" asChild>
               <a
-                href="https://github.com"
+                href="https://github.com/MacMittenss"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="GitHub"
@@ -86,7 +88,7 @@ export default function Navbar() {
             </Button>
             <Button variant="ghost" size="icon" asChild>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/marcusprater"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
@@ -95,7 +97,7 @@ export default function Navbar() {
               </a>
             </Button>
             <Button variant="ghost" size="icon" asChild>
-              <a href="mailto:contact@example.com" aria-label="Email">
+              <a href="mailto:scttjssy@gmail.com" aria-label="Email">
                 <Mail className="h-4 w-4" />
               </a>
             </Button>

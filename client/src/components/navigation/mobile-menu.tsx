@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
+import ThemeToggle from "@/components/ui/theme-toggle";
 import { Github, Linkedin, Mail, X } from "lucide-react";
 import { SheetClose } from "@/components/ui/sheet";
 
@@ -39,34 +40,46 @@ export default function MobileMenu({ navItems, onNavigate }: MobileMenuProps) {
       
       <Separator />
       
-      <div className="p-6">
-        <h3 className="text-sm font-medium mb-4">Connect</h3>
-        <div className="flex space-x-2">
-          <Button variant="outline" size="icon" asChild>
-            <a
-              href="https://github.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="GitHub"
-            >
-              <Github className="h-4 w-4" />
-            </a>
-          </Button>
-          <Button variant="outline" size="icon" asChild>
-            <a
-              href="https://linkedin.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="LinkedIn"
-            >
-              <Linkedin className="h-4 w-4" />
-            </a>
-          </Button>
-          <Button variant="outline" size="icon" asChild>
-            <a href="mailto:contact@example.com" aria-label="Email">
-              <Mail className="h-4 w-4" />
-            </a>
-          </Button>
+      <div className="p-6 space-y-6">
+        {/* Theme Toggle */}
+        <div>
+          <h3 className="text-sm font-medium mb-3">Theme</h3>
+          <div className="flex items-center space-x-2">
+            <ThemeToggle />
+            <span className="text-sm text-muted-foreground">Toggle theme</span>
+          </div>
+        </div>
+
+        {/* Social Links */}
+        <div>
+          <h3 className="text-sm font-medium mb-3">Connect</h3>
+          <div className="flex space-x-2">
+            <Button variant="outline" size="icon" asChild>
+              <a
+                href="https://github.com/MacMittenss"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+              >
+                <Github className="h-4 w-4" />
+              </a>
+            </Button>
+            <Button variant="outline" size="icon" asChild>
+              <a
+                href="https://www.linkedin.com/in/marcusprater"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+              >
+                <Linkedin className="h-4 w-4" />
+              </a>
+            </Button>
+            <Button variant="outline" size="icon" asChild>
+              <a href="mailto:scttjssy@gmail.com" aria-label="Email">
+                <Mail className="h-4 w-4" />
+              </a>
+            </Button>
+          </div>
         </div>
       </div>
     </div>
