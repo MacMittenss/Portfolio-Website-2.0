@@ -48,9 +48,11 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <div className="w-16 h-16 bg-primary rounded-lg flex items-center justify-center">
-              <span className="text-2xl font-black text-primary-foreground">MP</span>
-            </div>
+            <img
+              src="https://marcusprater.com/img/logo.png"
+              alt="Marcus Prater"
+              className="h-12 w-auto"
+            />
           </div>
 
           {/* Desktop Navigation */}
