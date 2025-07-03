@@ -151,9 +151,18 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: hsl(var(--background) / 0.7);
+    background-color: hsl(var(--background) / 0.7);
     z-index: 1;
     transition: background-color 0.3s ease;
+  }
+
+  /* Ensure hero overlay works with data-theme attribute */
+  [data-theme="light"] .hero-section::before {
+    background-color: hsla(0, 0%, 96%, 0.7);
+  }
+
+  [data-theme="dark"] .hero-section::before {
+    background-color: hsla(43, 8%, 4%, 0.7);
   }
 
   .hero-section > * {
