@@ -38,7 +38,7 @@ export default function Portfolio() {
         </section>
       </main>
       
-      <footer className="border-t border-grey-color/30 py-12" style={{ backgroundColor: 'black' }}>
+      <footer className="border-t border-border py-12 bg-background">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-4 md:mb-0">

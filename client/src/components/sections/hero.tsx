@@ -20,8 +20,12 @@ export default function Hero() {
   };
 
   return (
-    <section id="header-home" className="min-h-screen flex items-center justify-center relative overflow-hidden" style={{
-      background: `linear-gradient(hsla(var(--background) / 0.7), hsla(var(--background) / 0.7)), url('https://raw.githubusercontent.com/MacMittenss/Portfolio-Website/master/img/myshowcase1.jpg') no-repeat left center / cover`,
+    <section id="header-home" className="min-h-screen flex items-center justify-center relative overflow-hidden hero-section"
+    style={{
+      backgroundImage: `url('https://raw.githubusercontent.com/MacMittenss/Portfolio-Website/master/img/myshowcase1.jpg')`,
+      backgroundPosition: 'left center',
+      backgroundSize: 'cover',
+      backgroundRepeat: 'no-repeat',
       minHeight: '100vh'
     }}>
       <div className="container mx-auto px-4 py-24 relative z-10">

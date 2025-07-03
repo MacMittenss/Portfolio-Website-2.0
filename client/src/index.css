@@ -144,6 +144,23 @@
     background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
   }
 
+  .hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: hsl(var(--background) / 0.7);
+    z-index: 1;
+    transition: background-color 0.3s ease;
+  }
+
+  .hero-section > * {
+    position: relative;
+    z-index: 2;
+  }
+
   .glow-effect {
     box-shadow: 0 0 20px rgba(242, 144, 64, 0.3);
   }
