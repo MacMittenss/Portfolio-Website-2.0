@@ -40,10 +40,9 @@ export default function Navbar() {
     <nav
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
         isScrolled
-          ? "backdrop-blur-md border-b shadow-sm"
+          ? "bg-background/95 backdrop-blur-md border-b shadow-sm"
           : "bg-transparent"
       }`}
-      style={{ backgroundColor: isScrolled ? 'rgba(0,0,0,0.95)' : 'transparent' }}
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">

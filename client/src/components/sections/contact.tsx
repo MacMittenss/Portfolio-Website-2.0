@@ -46,7 +46,7 @@ export default function Contact() {
   });
 
   return (
-    <section className="py-20" style={{ backgroundColor: 'black' }}>
+    <section className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div
           ref={ref}

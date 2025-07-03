@@ -10,6 +10,8 @@ export default function ThemeToggle() {
     const savedTheme = localStorage.getItem('theme') as 'light' | 'dark' || 'dark';
     setTheme(savedTheme);
     document.documentElement.setAttribute('data-theme', savedTheme);
+    // Also add to body for additional CSS targeting
+    document.body.setAttribute('data-theme', savedTheme);
   }, []);
 
   const toggleTheme = () => {
@@ -17,6 +19,8 @@ export default function ThemeToggle() {
     setTheme(newTheme);
     localStorage.setItem('theme', newTheme);
     document.documentElement.setAttribute('data-theme', newTheme);
+    // Also add to body for additional CSS targeting
+    document.body.setAttribute('data-theme', newTheme);
   };
 
   return (

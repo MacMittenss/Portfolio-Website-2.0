@@ -20,8 +20,8 @@ export default function Hero() {
   };
 
   return (
-    <section id="header-home" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-background via-background to-background/50" style={{
-      background: `linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://raw.githubusercontent.com/MacMittenss/Portfolio-Website/master/img/myshowcase1.jpg') no-repeat left center / cover`,
+    <section id="header-home" className="min-h-screen flex items-center justify-center relative overflow-hidden" style={{
+      background: `linear-gradient(hsla(var(--background) / 0.7), hsla(var(--background) / 0.7)), url('https://raw.githubusercontent.com/MacMittenss/Portfolio-Website/master/img/myshowcase1.jpg') no-repeat left center / cover`,
       minHeight: '100vh'
     }}>
       <div className="container mx-auto px-4 py-24 relative z-10">
@@ -31,8 +31,8 @@ export default function Hero() {
             isIntersecting ? "animate-fade-in-up" : "opacity-0"
           }`}
         >
-          <div className="header-content text-left pt-16 text-light-color">
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-black mb-8 leading-tight font-['Poppins'] text-white">
+          <div className="header-content text-left pt-16">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-black mb-8 leading-tight font-['Poppins'] text-foreground">
               I Am Marcus, The{" "}
               <span className="block">
                 <Typewriter 
