@@ -105,6 +105,9 @@ Changelog:
 - June 24, 2025. Initial setup
 - June 24, 2025. Modernized portfolio with dark theme from original design
 - June 24, 2025. Restored original "Header home" section with Marcus Prater branding
+- January 3, 2025. Added comprehensive light/dark theme toggle system
+- January 3, 2025. Fixed typewriter animation logic and performance
+- January 3, 2025. Converted CSS to SCSS format for better organization and Netlify deployment preparation
 ```
 
 ## User Preferences
