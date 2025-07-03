@@ -11,39 +11,28 @@ export default function Typewriter({ words, wait = 3000, className = "" }: Typew
   const [wordIndex, setWordIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
 
-  // Debug logging
-  console.log("Typewriter state:", { text, wordIndex, isDeleting, words });
-
   useEffect(() => {
-    const type = () => {
-      const current = wordIndex % words.length;
-      const fullText = words[current];
-
+    const current = wordIndex % words.length;
+    const fullText = words[current];
+    
+    const timer = setTimeout(() => {
       if (isDeleting) {
         setText(fullText.substring(0, text.length - 1));
       } else {
         setText(fullText.substring(0, text.length + 1));
       }
+    }, isDeleting ? 75 : 150);
 
-      let typeSpeed = 150;
+    // Check if we've finished typing the word
+    if (!isDeleting && text === fullText) {
+      setTimeout(() => setIsDeleting(true), wait);
+    }
+    // Check if we've finished deleting the word
+    else if (isDeleting && text === "") {
+      setIsDeleting(false);
+      setWordIndex((prev) => prev + 1);
+    }
 
-      if (isDeleting) {
-        typeSpeed /= 2;
-      }
-
-      if (!isDeleting && text === fullText) {
-        typeSpeed = wait;
-        setIsDeleting(true);
-      } else if (isDeleting && text === "") {
-        setIsDeleting(false);
-        setWordIndex((prev) => prev + 1);
-        typeSpeed = 500;
-      }
-
-      setTimeout(type, typeSpeed);
-    };
-
-    const timer = setTimeout(type, 150);
     return () => clearTimeout(timer);
   }, [text, isDeleting, wordIndex, words, wait]);
 
