@@ -50,7 +50,7 @@ export default function About() {
           }`}
         >
           <div className="text-center mb-16">
-            <Badge variant="outline" className="mb-6 bg-primary/10 text-primary border-primary">
+            <Badge variant="outline" className="mb-6 bg-primary/10 text-primary border-border">
               About Me
             </Badge>
             <h2 className="text-5xl font-black mb-8 font-['Poppins']">
