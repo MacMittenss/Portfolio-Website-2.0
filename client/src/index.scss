@@ -108,10 +108,6 @@
 }
 
 // Base styles
-* {
-  border-color: hsl(var(--border));
-}
-
 body {
   background-color: hsl(var(--background));
   color: hsl(var(--foreground));
@@ -187,14 +183,14 @@ body {
   // Navbar logo styling for theme switching
   .navbar-logo {
     transition: filter 0.3s ease;
+  }
 
-    [data-theme="light"] & {
-      filter: invert(1) brightness(0);
-    }
+  [data-theme="light"] .navbar-logo {
+    filter: invert(1) brightness(0);
+  }
 
-    [data-theme="dark"] & {
-      filter: none;
-    }
+  [data-theme="dark"] .navbar-logo {
+    filter: none;
   }
 
   // Additional utility classes
