@@ -10,7 +10,7 @@ export default function SkillBadge({ name, isVisible, delay = 0 }: SkillBadgePro
   return (
     <Badge
       variant="secondary"
-      className={`hover:bg-primary hover:text-primary-foreground transition-all duration-300 cursor-pointer ${
+      className={`border-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300 cursor-pointer ${
         isVisible ? "animate-scale-in" : "opacity-0"
       }`}
       style={{ animationDelay: `${delay}ms` }}
