@@ -52,7 +52,7 @@ export default function Hero() {
             <Button
               size="lg"
               onClick={scrollToProjects}
-              className="text-lg px-8 py-3 bg-transparent border-2 border-white text-white hover:bg-white hover:text-black font-semibold transition-all duration-300"
+              className="text-lg px-8 py-3 bg-transparent border-2 border-foreground text-foreground hover:bg-foreground hover:text-background font-semibold transition-all duration-300"
             >
               View My Work
             </Button>
