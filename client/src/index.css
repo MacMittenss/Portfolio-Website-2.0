@@ -170,6 +170,19 @@
     z-index: 2;
   }
 
+  /* Navbar logo styling for theme switching */
+  .navbar-logo {
+    transition: filter 0.3s ease;
+  }
+
+  [data-theme="light"] .navbar-logo {
+    filter: invert(1) brightness(0);
+  }
+
+  [data-theme="dark"] .navbar-logo {
+    filter: none;
+  }
+
   .glow-effect {
     box-shadow: 0 0 20px rgba(242, 144, 64, 0.3);
   }

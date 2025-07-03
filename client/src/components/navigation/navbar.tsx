@@ -51,7 +51,7 @@ export default function Navbar() {
             <img
               src="https://marcusprater.com/img/logo.png"
               alt="Marcus Prater"
-              className="h-12 w-auto"
+              className="h-12 w-auto navbar-logo"
             />
           </div>
 
