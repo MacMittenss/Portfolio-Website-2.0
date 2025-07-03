@@ -158,7 +158,7 @@
 
   /* Ensure hero overlay works with data-theme attribute */
   [data-theme="light"] .hero-section::before {
-    background-color: hsla(0, 0%, 96%, 0.7);
+    background-color: hsla(0, 0%, 96%, 0.85);
   }
 
   [data-theme="dark"] .hero-section::before {
