@@ -11,6 +11,9 @@ export default function Typewriter({ words, wait = 3000, className = "" }: Typew
   const [wordIndex, setWordIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
 
+  // Debug logging
+  console.log("Typewriter state:", { text, wordIndex, isDeleting, words });
+
   useEffect(() => {
     const type = () => {
       const current = wordIndex % words.length;
