@@ -57,10 +57,7 @@ export default function Navbar() {
               <img
                 src="/logo.png"
                 alt="Marcus Prater"
-                className="h-12 w-auto"
-                style={{
-                  filter: theme === 'dark' ? 'invert(0)' : 'invert(1)',
-                }}
+                className={`h-12 w-auto ${theme === 'dark' ? '' : 'invert'}`}
               />
             </button>
           </div>
