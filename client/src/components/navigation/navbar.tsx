@@ -48,11 +48,12 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <img
-              src="https://marcusprater.com/img/logo.png"
-              alt="Marcus Prater"
-              className="h-12 w-auto navbar-logo"
-            />
+            <button
+              onClick={() => scrollToSection("#hero")}
+              className="text-2xl font-bold text-primary hover:text-primary/80 transition-colors cursor-pointer"
+            >
+              MP
+            </button>
           </div>
 
           {/* Desktop Navigation */}
