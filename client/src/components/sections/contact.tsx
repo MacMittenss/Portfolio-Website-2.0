@@ -55,7 +55,7 @@ export default function Contact() {
           }`}
         >
           <div className="text-center mb-16">
-            <Badge variant="outline" className="mb-6 bg-primary/10 text-primary border-primary/30">
+            <Badge variant="outline" className="mb-6 bg-primary/10 text-primary border-border">
               Get In Touch
             </Badge>
             <h2 className="text-5xl font-black mb-8 font-['Poppins']">
