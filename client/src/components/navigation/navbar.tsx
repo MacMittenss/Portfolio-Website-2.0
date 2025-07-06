@@ -60,9 +60,9 @@ export default function Navbar() {
               className="hover:opacity-80 transition-opacity cursor-pointer"
             >
               <img
-                src="/logo.png"
+                src={mounted && resolvedTheme === 'light' ? '/logo-black.png' : '/logo.png'}
                 alt="Marcus Prater"
-                className={`h-12 w-auto ${mounted && resolvedTheme === 'light' ? 'invert' : ''}`}
+                className="h-12 w-auto"
               />
             </button>
           </div>
