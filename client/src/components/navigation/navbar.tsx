@@ -17,7 +17,12 @@ const navItems = [
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const activeSection = useScrollSpy(['hero', 'about', 'skills', 'projects', 'contact']);
-  const { theme } = useTheme();
+  const { theme, resolvedTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -57,7 +62,7 @@ export default function Navbar() {
               <img
                 src="/logo.png"
                 alt="Marcus Prater"
-                className={`h-12 w-auto ${theme === 'dark' ? '' : 'invert'}`}
+                className={`h-12 w-auto ${mounted && resolvedTheme === 'dark' ? '' : 'invert'}`}
               />
             </button>
           </div>
