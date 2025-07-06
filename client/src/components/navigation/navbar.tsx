@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Menu, Github, Linkedin, Mail } from "lucide-react";
+import { Menu, Github, Linkedin, Mail, Download } from "lucide-react";
 import MobileMenu from "./mobile-menu";
 import ThemeToggle from "@/components/ui/theme-toggle";
 import { useScrollSpy } from "@/hooks/use-scroll-spy";
@@ -98,6 +98,15 @@ export default function Navbar() {
             <Button variant="ghost" size="icon" asChild>
               <a href="mailto:scttjssy@gmail.com" aria-label="Email">
                 <Mail className="h-4 w-4" />
+              </a>
+            </Button>
+            <Button variant="ghost" size="icon" asChild>
+              <a 
+                href="/assets/Marcus_Prater_Resume.pdf" 
+                download="Marcus_Prater_Resume.pdf"
+                aria-label="Download Resume"
+              >
+                <Download className="h-4 w-4" />
               </a>
             </Button>
           </div>

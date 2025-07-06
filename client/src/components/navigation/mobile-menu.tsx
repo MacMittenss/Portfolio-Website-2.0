@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import ThemeToggle from "@/components/ui/theme-toggle";
-import { Github, Linkedin, Mail, X } from "lucide-react";
+import { Github, Linkedin, Mail, Download, X } from "lucide-react";
 import { SheetClose, SheetTitle, SheetDescription } from "@/components/ui/sheet";
 
 interface MobileMenuProps {
@@ -82,6 +82,15 @@ export default function MobileMenu({ navItems, onNavigate }: MobileMenuProps) {
             <Button variant="outline" size="icon" asChild>
               <a href="mailto:scttjssy@gmail.com" aria-label="Email">
                 <Mail className="h-4 w-4" />
+              </a>
+            </Button>
+            <Button variant="outline" size="icon" asChild>
+              <a 
+                href="/assets/Marcus_Prater_Resume.pdf" 
+                download="Marcus_Prater_Resume.pdf"
+                aria-label="Download Resume"
+              >
+                <Download className="h-4 w-4" />
               </a>
             </Button>
           </div>
