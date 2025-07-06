@@ -91,7 +91,7 @@ export default function About() {
                       {tech === "React" && <SiReact className="text-cyan-500" />}
                     </div>
                     <div className="mt-auto">
-                      <Badge className="bg-primary/20 text-primary border-primary/30 hover:bg-primary hover:text-primary-foreground transition-colors text-xs whitespace-nowrap">
+                      <Badge className="bg-primary/20 text-primary border-border hover:bg-primary hover:text-primary-foreground transition-colors text-xs whitespace-nowrap">
                         {tech}
                       </Badge>
                     </div>
