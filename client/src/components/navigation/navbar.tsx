@@ -50,9 +50,16 @@ export default function Navbar() {
           <div className="flex items-center">
             <button
               onClick={() => scrollToSection("#hero")}
-              className="text-2xl font-bold text-primary hover:text-primary/80 transition-colors cursor-pointer"
+              className="flex items-center space-x-2 hover:opacity-80 transition-opacity cursor-pointer"
             >
-              MP
+              <img
+                src="/logo.svg"
+                alt="Marcus Prater"
+                className="h-10 w-10 text-primary"
+              />
+              <span className="text-xl font-bold text-primary hidden sm:block">
+                Marcus Prater
+              </span>
             </button>
           </div>
 
