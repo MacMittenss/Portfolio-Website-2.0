@@ -31,7 +31,7 @@ export default function ProjectCard({
 }: ProjectCardProps) {
   return (
     <Card
-      className={`card-hover overflow-hidden border-grey-color/30 bg-card/50 backdrop-blur-sm hover:border-primary/50 transition-all duration-300 ${
+      className={`card-hover overflow-hidden border-border bg-card/50 backdrop-blur-sm hover:border-primary/50 transition-all duration-300 ${
         isVisible ? "animate-fade-in-up" : "opacity-0"
       }`}
       style={{ animationDelay: `${index * 200}ms` }}
