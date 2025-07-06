@@ -5,6 +5,7 @@ import { Menu, Github, Linkedin, Mail, Download } from "lucide-react";
 import MobileMenu from "./mobile-menu";
 import ThemeToggle from "@/components/ui/theme-toggle";
 import { useScrollSpy } from "@/hooks/use-scroll-spy";
+import { useTheme } from "next-themes";
 
 const navItems = [
   { href: "#hero", label: "Home" },
@@ -16,6 +17,7 @@ const navItems = [
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const activeSection = useScrollSpy(['hero', 'about', 'skills', 'projects', 'contact']);
+  const { theme } = useTheme();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -55,7 +57,10 @@ export default function Navbar() {
               <img
                 src="/logo.png"
                 alt="Marcus Prater"
-                className="h-12 w-auto invert dark:invert-0"
+                className="h-12 w-auto"
+                style={{
+                  filter: theme === 'dark' ? 'invert(0)' : 'invert(1)',
+                }}
               />
             </button>
           </div>
