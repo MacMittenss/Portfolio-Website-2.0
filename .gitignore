@@ -4,3 +4,16 @@ dist
 server/public
 vite.config.ts.*
 *.tar.gz
+
+# Replit files
+.replit
+.upm
+.pythonlibs
+.cache
+.local
+
+# Development utilities
+scrape_*.py
+portfolio_images.json
+pyproject.toml
+uv.lock

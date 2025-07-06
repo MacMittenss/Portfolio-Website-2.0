@@ -93,10 +93,10 @@ The schema includes three main entities:
 - **Database Migrations**: Drizzle Kit handles schema migrations
 
 ### Deployment Target
-- **Platform**: Replit with autoscale deployment
-- **Environment**: Node.js 20 with PostgreSQL 16
-- **Build Process**: Automated build and deployment pipeline
-- **Runtime**: Production server runs bundled Express app
+- **Platform**: Netlify for static site deployment
+- **Environment**: Node.js 20 for build process
+- **Build Process**: Vite builds optimized static assets
+- **Runtime**: Static site hosted on Netlify with form handling
 
 ## Changelog
 
