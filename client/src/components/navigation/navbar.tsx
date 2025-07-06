@@ -55,7 +55,7 @@ export default function Navbar() {
               <img
                 src="/logo.png"
                 alt="Marcus Prater"
-                className="h-12 w-auto"
+                className="h-12 w-auto dark:invert"
               />
             </button>
           </div>
