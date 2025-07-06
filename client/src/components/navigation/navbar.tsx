@@ -100,13 +100,19 @@ export default function Navbar() {
                 <Mail className="h-4 w-4" />
               </a>
             </Button>
-            <Button variant="ghost" size="icon" asChild>
+            <Button
+              size="sm"
+              className="px-4 py-2 bg-primary hover:bg-primary/90 text-primary-foreground font-semibold transition-all duration-300 rounded-lg"
+              asChild
+            >
               <a 
                 href="/assets/Marcus_Prater_Resume.pdf" 
                 download="Marcus_Prater_Resume.pdf"
-                aria-label="Download Resume"
+                aria-label="Download CV"
+                className="flex items-center gap-2"
               >
                 <Download className="h-4 w-4" />
+                Download CV
               </a>
             </Button>
           </div>

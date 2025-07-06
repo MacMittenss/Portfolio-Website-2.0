@@ -58,7 +58,7 @@ export default function MobileMenu({ navItems, onNavigate }: MobileMenuProps) {
         {/* Social Links */}
         <div>
           <h3 className="text-sm font-medium mb-3">Connect</h3>
-          <div className="flex space-x-2">
+          <div className="flex space-x-2 mb-4">
             <Button variant="outline" size="icon" asChild>
               <a
                 href="https://github.com/MacMittenss"
@@ -84,16 +84,24 @@ export default function MobileMenu({ navItems, onNavigate }: MobileMenuProps) {
                 <Mail className="h-4 w-4" />
               </a>
             </Button>
-            <Button variant="outline" size="icon" asChild>
-              <a 
-                href="/assets/Marcus_Prater_Resume.pdf" 
-                download="Marcus_Prater_Resume.pdf"
-                aria-label="Download Resume"
-              >
-                <Download className="h-4 w-4" />
-              </a>
-            </Button>
           </div>
+          
+          {/* Download CV Button */}
+          <Button
+            size="sm"
+            className="w-full px-4 py-2 bg-primary hover:bg-primary/90 text-primary-foreground font-semibold transition-all duration-300 rounded-lg"
+            asChild
+          >
+            <a 
+              href="/assets/Marcus_Prater_Resume.pdf" 
+              download="Marcus_Prater_Resume.pdf"
+              aria-label="Download CV"
+              className="flex items-center justify-center gap-2"
+            >
+              <Download className="h-4 w-4" />
+              Download CV
+            </a>
+          </Button>
         </div>
       </div>
     </div>
