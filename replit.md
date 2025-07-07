@@ -110,6 +110,7 @@ Changelog:
 - January 3, 2025. Converted CSS to SCSS format for better organization and Netlify deployment preparation
 - January 6, 2025. Restored navigation logo with original PNG from GitHub repository and theme-aware display
 - January 7, 2025. Fixed project images by downloading from GitHub and hosting locally
+- January 7, 2025. Updated project images with actual website screenshots and SoleGrid logo
 ```
 
 ## User Preferences
