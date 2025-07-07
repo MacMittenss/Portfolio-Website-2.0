@@ -4,18 +4,18 @@
 
 Your portfolio project includes:
 - Complete React/TypeScript frontend
-- Express.js backend
+- Express.js backend  
 - All project images and assets
 - Professional README.md
-- Clean configuration files
+- Clean configuration files (Replit references removed)
 
 ## 🚀 Setup Instructions
 
 ### 1. Download and Extract
-1. Download the `marcus-portfolio.tar.gz` file
+1. Download the `marcus-portfolio-github-ready.tar.gz` file
 2. Extract it to your desired directory:
    ```bash
-   tar -xzf marcus-portfolio.tar.gz
+   tar -xzf marcus-portfolio-github-ready.tar.gz
    cd marcus-portfolio
    ```
 
@@ -33,74 +33,16 @@ git branch -M main
 git push -u origin main
 ```
 
-### 4. Clean Up Replit Dependencies (Important!)
-
-Edit `vite.config.ts` and remove these lines:
-
-**Remove this import:**
-```typescript
-import runtimeErrorOverlay from "@replit/vite-plugin-runtime-error-modal";
-```
-
-**Remove from plugins array:**
-```typescript
-runtimeErrorOverlay(),
-...(process.env.NODE_ENV !== "production" &&
-process.env.REPL_ID !== undefined
-  ? [
-      await import("@replit/vite-plugin-cartographer").then((m) =>
-        m.cartographer(),
-      ),
-    ]
-  : []),
-```
-
-**Your vite.config.ts should look like this:**
-```typescript
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
-import path from "path";
-
-export default defineConfig({
-  plugins: [
-    react(),
-  ],
-  resolve: {
-    alias: {
-      "@": path.resolve(import.meta.dirname, "client", "src"),
-      "@shared": path.resolve(import.meta.dirname, "shared"),
-      "@assets": path.resolve(import.meta.dirname, "attached_assets"),
-    },
-  },
-  root: path.resolve(import.meta.dirname, "client"),
-  build: {
-    outDir: path.resolve(import.meta.dirname, "dist/public"),
-    emptyOutDir: true,
-  },
-  server: {
-    fs: {
-      strict: true,
-      deny: ["**/.*"],
-    },
-  },
-});
-```
-
-### 5. Remove Replit Dependencies
-```bash
-npm uninstall @replit/vite-plugin-runtime-error-modal @replit/vite-plugin-cartographer
-```
-
-### 6. Install Dependencies and Test
+### 4. Install Dependencies and Test
 ```bash
 npm install
 npm run dev
 ```
 
-### 7. Commit the Clean Version
+### 5. Commit and Push to GitHub
 ```bash
 git add .
-git commit -m "Remove Replit dependencies and clean up for GitHub"
+git commit -m "Add Marcus Prater portfolio website"
 git push
 ```
 
