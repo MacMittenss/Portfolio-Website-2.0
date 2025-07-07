@@ -94,10 +94,12 @@ The schema includes three main entities:
 - **Database Migrations**: Drizzle Kit handles schema migrations
 
 ### Deployment Target
-- **Platform**: Netlify, Vercel, or any static hosting platform
+- **Primary Platform**: Netlify with serverless functions
+- **Alternative**: Vercel, GitHub Pages, or any static hosting platform  
 - **Environment**: Node.js 20+ for build process
 - **Build Process**: Vite builds optimized static assets
-- **Runtime**: Static site with optional Express.js backend for dynamic features
+- **Runtime**: Static site with Netlify Functions for contact form handling
+- **Configurations**: netlify.toml, _redirects, and optimized package.json included
 
 ## Changelog
 
@@ -112,6 +114,8 @@ Changelog:
 - January 6, 2025. Restored navigation logo with original PNG from GitHub repository and theme-aware display
 - January 7, 2025. Fixed project images by downloading from GitHub and hosting locally
 - January 7, 2025. Updated project images with actual website screenshots and SoleGrid logo
+- January 7, 2025. Removed all Replit dependencies for clean GitHub deployment
+- January 7, 2025. Created Netlify-optimized version with serverless functions and static hosting
 ```
 
 ## User Preferences

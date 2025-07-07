@@ -1,0 +1,5 @@
+# Redirect API calls to Netlify Functions
+/api/* /.netlify/functions/:splat 200
+
+# Handle client-side routing (SPA fallback)
+/* /index.html 200
