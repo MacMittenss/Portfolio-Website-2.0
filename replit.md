@@ -1,4 +1,4 @@
-# Portfolio Website
+# Marcus Prater - Portfolio Website
 
 ## Overview
 
@@ -85,6 +85,7 @@ The schema includes three main entities:
 - **Local Development**: Vite dev server with HMR for frontend, TSX for backend development
 - **Database**: PostgreSQL instance configured via environment variables
 - **Port Configuration**: Frontend serves on port 5000, proxied through Express in production
+- **Getting Started**: `npm install` then `npm run dev` to start development server
 
 ### Production Build
 - **Frontend**: Vite builds optimized static assets to `dist/public`
@@ -93,10 +94,10 @@ The schema includes three main entities:
 - **Database Migrations**: Drizzle Kit handles schema migrations
 
 ### Deployment Target
-- **Platform**: Netlify for static site deployment
-- **Environment**: Node.js 20 for build process
+- **Platform**: Netlify, Vercel, or any static hosting platform
+- **Environment**: Node.js 20+ for build process
 - **Build Process**: Vite builds optimized static assets
-- **Runtime**: Static site hosted on Netlify with form handling
+- **Runtime**: Static site with optional Express.js backend for dynamic features
 
 ## Changelog
 

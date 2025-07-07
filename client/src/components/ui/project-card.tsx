@@ -35,7 +35,6 @@ export default function ProjectCard({
   useEffect(() => {
     const updateTheme = () => {
       const currentTheme = document.documentElement.getAttribute('data-theme') || 'dark';
-      console.log('Portfolio logo theme:', currentTheme);
       setTheme(currentTheme);
     };
     
@@ -67,14 +66,10 @@ export default function ProjectCard({
             }`}
             style={
               project.title === "Portfolio Website" 
-                ? (() => {
-                    const filterValue = theme === 'light' ? 'brightness(0)' : 'none';
-                    console.log('Applying filter to Portfolio logo:', filterValue);
-                    return {
-                      filter: filterValue,
-                      transition: 'filter 0.3s ease'
-                    };
-                  })()
+                ? { 
+                    filter: theme === 'light' ? 'brightness(0)' : 'none',
+                    transition: 'filter 0.3s ease'
+                  }
                 : undefined
             }
           />
