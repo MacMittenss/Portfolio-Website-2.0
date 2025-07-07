@@ -42,7 +42,7 @@ export default function ProjectCard({
             src={project.imageUrl}
             alt={project.title}
             className={`w-full h-48 transition-transform duration-300 hover:scale-105 ${
-              project.title === "SoleGrid" ? "object-contain bg-gray-100 dark:bg-gray-800" : "object-cover"
+              project.title === "SoleGrid" ? "object-contain bg-gray-200 dark:bg-gray-700" : "object-cover"
             }`}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300" />
