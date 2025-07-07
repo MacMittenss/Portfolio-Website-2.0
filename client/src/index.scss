@@ -210,10 +210,11 @@ body {
 
   /* Portfolio logo filter */
   .filter-portfolio-logo {
-    filter: invert(1) brightness(0);
+    filter: invert(1) brightness(0) !important;
   }
 
+  .dark .filter-portfolio-logo,
   [data-theme="dark"] .filter-portfolio-logo {
-    filter: none;
+    filter: none !important;
   }
 }

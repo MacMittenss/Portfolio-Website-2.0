@@ -2,6 +2,7 @@ import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/componen
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink, Github } from "lucide-react";
+import { useEffect, useState } from "react";
 
 interface Project {
   id: number;
@@ -29,6 +30,25 @@ export default function ProjectCard({
   isVisible,
   compact = false,
 }: ProjectCardProps) {
+  const [theme, setTheme] = useState<string>('dark');
+
+  useEffect(() => {
+    const updateTheme = () => {
+      const currentTheme = document.documentElement.getAttribute('data-theme') || 'dark';
+      setTheme(currentTheme);
+    };
+    
+    updateTheme();
+    
+    // Listen for theme changes
+    const observer = new MutationObserver(updateTheme);
+    observer.observe(document.documentElement, { 
+      attributes: true, 
+      attributeFilter: ['data-theme'] 
+    });
+    
+    return () => observer.disconnect();
+  }, []);
   return (
     <Card
       className={`card-hover overflow-hidden border-border bg-card/50 backdrop-blur-sm hover:border-primary/50 transition-all duration-300 ${
@@ -43,9 +63,12 @@ export default function ProjectCard({
             alt={project.title}
             className={`w-full h-48 transition-transform duration-300 hover:scale-105 ${
               project.title === "SoleGrid" || project.title === "Portfolio Website" ? "object-contain bg-gray-200 dark:bg-gray-700" : "object-cover"
-            } ${
-              project.title === "Portfolio Website" ? "filter-portfolio-logo" : ""
             }`}
+            style={
+              project.title === "Portfolio Website" 
+                ? { filter: theme === 'light' ? 'invert(1) brightness(0)' : 'none' }
+                : undefined
+            }
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300" />
         </div>
