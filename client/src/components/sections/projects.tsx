@@ -47,7 +47,7 @@ const projects = [
     title: "Portfolio Website",
     description: "Personal portfolio showcasing front-end projects and technical skills",
     longDescription: "A clean, minimalist portfolio website built from scratch with semantic HTML5, custom SCSS styling, and vanilla JavaScript. Features responsive design, dark mode aesthetic, and clear navigation across dedicated pages for Home, About, Work, and Contact.",
-    imageUrl: "/projects/item4.png",
+    imageUrl: "/projects/portfolio-logo.png",
     technologies: ["HTML5", "SCSS", "CSS3", "JavaScript"],
     githubUrl: "https://github.com/MacMittenss/Portfolio-Website",
     liveUrl: "https://marcusprater.com/",
