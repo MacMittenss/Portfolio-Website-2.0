@@ -4,7 +4,7 @@ A modern, responsive portfolio website showcasing front-end development skills a
 
 ## 🚀 Features
 
-- **Modern Stack**: Built with React 18, TypeScript, and Express.js
+- **Modern Stack**: Built with React 18, TypeScript, and Vite
 - **Responsive Design**: Mobile-first approach with smooth animations
 - **Dark/Light Theme**: Toggle between themes with system preference detection
 - **Interactive UI**: Smooth animations and transitions using Framer Motion
