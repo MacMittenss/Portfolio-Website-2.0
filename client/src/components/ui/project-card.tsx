@@ -44,7 +44,7 @@ export default function ProjectCard({
             className={`w-full h-48 transition-transform duration-300 hover:scale-105 ${
               project.title === "SoleGrid" || project.title === "Portfolio Website" ? "object-contain bg-gray-200 dark:bg-gray-700" : "object-cover"
             } ${
-              project.title === "Portfolio Website" ? "invert dark:invert-0" : ""
+              project.title === "Portfolio Website" ? "brightness-0 dark:brightness-100 dark:invert-0" : ""
             }`}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300" />
