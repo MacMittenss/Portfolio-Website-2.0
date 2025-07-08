@@ -217,4 +217,23 @@ body {
   [data-theme="dark"] .filter-portfolio-logo {
     filter: none !important;
   }
+
+  // Force dark mode icon colors in mobile menu Connect section
+  .mobile-menu-connect-icon {
+    svg {
+      color: currentColor !important;
+      fill: currentColor !important;
+      stroke: currentColor !important;
+    }
+  }
+
+  .dark .mobile-menu-connect-icon {
+    color: rgb(226 232 240) !important;
+    
+    svg {
+      color: rgb(226 232 240) !important;
+      fill: rgb(226 232 240) !important;
+      stroke: rgb(226 232 240) !important;
+    }
+  }
 }
