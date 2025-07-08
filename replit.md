@@ -140,6 +140,7 @@ Changelog:
 - January 7, 2025. Successfully pushed clean Netlify-optimized portfolio to GitHub repository
 - January 8, 2025. Fixed development server port configuration issue - resolved workflow startup problems
 - January 8, 2025. Fixed dark mode mobile menu text colors - navigation links now display in soft white instead of black
+- January 8, 2025. Enhanced Connect section icons with wrapper divs and inline styles for proper dark mode soft white display
 ```
 
 ## User Preferences
