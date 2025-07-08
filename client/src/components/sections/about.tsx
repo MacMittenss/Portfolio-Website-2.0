@@ -78,7 +78,7 @@ export default function About() {
                 {["HTML", "CSS", "SASS", "JavaScript", "React"].map((tech, index) => (
                   <div
                     key={tech}
-                    className={`flex flex-col items-center justify-center p-4 rounded-lg bg-card/10 border border-slate-600 dark:border-slate-600 hover:border-slate-500 dark:hover:border-slate-500 transition-all duration-300 min-h-[120px] md:bg-transparent md:border-none md:p-2 md:min-h-[80px] ${
+                    className={`flex flex-col items-center justify-center p-4 rounded-lg bg-card/10 border border-slate-300 dark:border-slate-600 hover:border-slate-400 dark:hover:border-slate-500 transition-all duration-300 min-h-[120px] md:bg-transparent md:border-none md:p-2 md:min-h-[80px] ${
                       isIntersecting ? "animate-scale-in" : "opacity-0"
                     }`}
                     style={{ animationDelay: `${index * 100}ms` }}
