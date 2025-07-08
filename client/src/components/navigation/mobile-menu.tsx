@@ -17,13 +17,8 @@ export default function MobileMenu({ navItems, onNavigate }: MobileMenuProps) {
         Navigate through different sections of the portfolio
       </SheetDescription>
       
-      <div className="flex items-center justify-between p-6">
+      <div className="p-6">
         <h2 className="text-lg font-semibold gradient-text dark:text-slate-200">Navigation</h2>
-        <SheetClose asChild>
-          <Button variant="ghost" size="icon">
-            <X className="h-4 w-4" />
-          </Button>
-        </SheetClose>
       </div>
       
       <Separator />
