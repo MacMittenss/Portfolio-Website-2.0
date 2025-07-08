@@ -65,6 +65,7 @@ export default function MobileMenu({ navItems, onNavigate }: MobileMenuProps) {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="GitHub"
+                className="dark:text-slate-200 dark:border-slate-600 dark:hover:bg-slate-800"
               >
                 <Github className="h-4 w-4" />
               </a>
@@ -75,12 +76,13 @@ export default function MobileMenu({ navItems, onNavigate }: MobileMenuProps) {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
+                className="dark:text-slate-200 dark:border-slate-600 dark:hover:bg-slate-800"
               >
                 <Linkedin className="h-4 w-4" />
               </a>
             </Button>
             <Button variant="outline" size="icon" asChild>
-              <a href="mailto:scttjssy@gmail.com" aria-label="Email">
+              <a href="mailto:scttjssy@gmail.com" aria-label="Email" className="dark:text-slate-200 dark:border-slate-600 dark:hover:bg-slate-800">
                 <Mail className="h-4 w-4" />
               </a>
             </Button>
