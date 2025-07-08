@@ -139,6 +139,7 @@ Changelog:
 - January 7, 2025. Created Netlify-optimized version with serverless functions and static hosting
 - January 7, 2025. Successfully pushed clean Netlify-optimized portfolio to GitHub repository
 - January 8, 2025. Fixed development server port configuration issue - resolved workflow startup problems
+- January 8, 2025. Fixed dark mode mobile menu text colors - navigation links now display in soft white instead of black
 ```
 
 ## User Preferences

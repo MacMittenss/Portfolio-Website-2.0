@@ -18,7 +18,7 @@ export default function MobileMenu({ navItems, onNavigate }: MobileMenuProps) {
       </SheetDescription>
       
       <div className="flex items-center justify-between p-6">
-        <h2 className="text-lg font-semibold gradient-text">Navigation</h2>
+        <h2 className="text-lg font-semibold gradient-text dark:text-slate-200">Navigation</h2>
         <SheetClose asChild>
           <Button variant="ghost" size="icon">
             <X className="h-4 w-4" />
@@ -34,7 +34,7 @@ export default function MobileMenu({ navItems, onNavigate }: MobileMenuProps) {
             <SheetClose key={item.href} asChild>
               <button
                 onClick={() => onNavigate(item.href)}
-                className="w-full text-left px-6 py-3 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground rounded-md"
+                className="w-full text-left px-6 py-3 text-sm font-medium text-foreground dark:text-slate-200 transition-colors hover:bg-accent hover:text-accent-foreground rounded-md"
               >
                 {item.label}
               </button>
@@ -48,7 +48,7 @@ export default function MobileMenu({ navItems, onNavigate }: MobileMenuProps) {
       <div className="p-6 space-y-6">
         {/* Theme Toggle */}
         <div>
-          <h3 className="text-sm font-medium mb-3">Theme</h3>
+          <h3 className="text-sm font-medium mb-3 text-foreground dark:text-slate-200">Theme</h3>
           <div className="flex items-center space-x-2">
             <ThemeToggle />
             <span className="text-sm text-muted-foreground">Toggle theme</span>
@@ -57,7 +57,7 @@ export default function MobileMenu({ navItems, onNavigate }: MobileMenuProps) {
 
         {/* Social Links */}
         <div>
-          <h3 className="text-sm font-medium mb-3">Connect</h3>
+          <h3 className="text-sm font-medium mb-3 text-foreground dark:text-slate-200">Connect</h3>
           <div className="flex space-x-2 mb-4">
             <Button variant="outline" size="icon" asChild>
               <a
