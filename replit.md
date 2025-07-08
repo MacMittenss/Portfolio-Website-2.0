@@ -101,6 +101,27 @@ The schema includes three main entities:
 - **Runtime**: Static site with Netlify Functions for contact form handling
 - **Configurations**: netlify.toml, _redirects, and optimized package.json included
 
+## Development Server Fix
+
+### Issue Resolution
+The application was failing to start because of a port mismatch:
+- **Workflow expected**: Port 5000
+- **Vite default**: Port 5173
+
+### Solution Implemented
+Created custom development server scripts that run Vite on port 5000:
+- `run-dev-server.js` - Main development server script
+- `vite-dev.js` - Alternative development server script
+- `client/vite.config.ts` - Proper Vite configuration with correct aliases
+
+### Running the Application
+To start the development server correctly:
+```bash
+node run-dev-server.js
+```
+
+This will start Vite on port 5000 with proper path resolution for all components.
+
 ## Changelog
 
 ```
@@ -117,6 +138,7 @@ Changelog:
 - January 7, 2025. Removed all Replit dependencies for clean GitHub deployment
 - January 7, 2025. Created Netlify-optimized version with serverless functions and static hosting
 - January 7, 2025. Successfully pushed clean Netlify-optimized portfolio to GitHub repository
+- January 8, 2025. Fixed development server port configuration issue - resolved workflow startup problems
 ```
 
 ## User Preferences
