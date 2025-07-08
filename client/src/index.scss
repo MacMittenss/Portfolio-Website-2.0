@@ -236,4 +236,14 @@ body {
       stroke: rgb(226 232 240) !important;
     }
   }
+
+  // Make X button soft white in dark mode - comprehensive targeting
+  .dark [data-radix-dialog-content] button svg,
+  .dark [role="dialog"] button svg,
+  .dark [data-state="open"] button svg,
+  .dark .mobile-menu-close svg {
+    color: rgb(226 232 240) !important;
+    fill: rgb(226 232 240) !important;
+    stroke: rgb(226 232 240) !important;
+  }
 }
