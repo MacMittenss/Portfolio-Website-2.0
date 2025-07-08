@@ -237,18 +237,27 @@ body {
     }
   }
 
-  // Make X button rgb(226 232 240) in dark mode
-  .dark [data-radix-dialog-content] button svg,
-  .dark [role="dialog"] button svg,
-  .dark [data-state="open"] button svg,
-  .dark .mobile-menu-close svg {
+  // Target Sheet close button specifically
+  .dark [data-radix-dialog-content] {
+    button {
+      svg {
+        color: rgb(226 232 240) !important;
+        fill: rgb(226 232 240) !important;
+        stroke: rgb(226 232 240) !important;
+      }
+    }
+  }
+  
+  // Target the exact close button from SheetContent
+  .dark [data-radix-dialog-content] button.absolute svg,
+  .dark [data-radix-dialog-content] > button svg {
     color: rgb(226 232 240) !important;
     fill: rgb(226 232 240) !important;
     stroke: rgb(226 232 240) !important;
   }
   
-  // Additional targeting for Sheet close button
-  .dark [data-radix-dialog-content] > button svg {
+  // Nuclear option - force all buttons in Sheet to have white SVGs
+  .dark [data-radix-dialog-content] button * {
     color: rgb(226 232 240) !important;
     fill: rgb(226 232 240) !important;
     stroke: rgb(226 232 240) !important;
