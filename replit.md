@@ -142,7 +142,7 @@ Changelog:
 - January 8, 2025. Fixed dark mode mobile menu text colors - navigation links now display in soft white instead of black
 - January 8, 2025. Enhanced Connect section icons with wrapper divs and inline styles for proper dark mode soft white display
 - January 8, 2025. Fixed hamburger menu styling - removed duplicate X button and applied rgb(226 232 240) to close button in dark mode
-- January 8, 2025. Updated tech stack borders in mobile view to use softer borders - slate-300 for light mode and slate-200 for dark mode
+- January 8, 2025. Updated tech stack borders in mobile view to use softer borders - slate-300 for light mode and slate-600 for dark mode
 ```
 
 ## User Preferences
