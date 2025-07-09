@@ -130,7 +130,8 @@ export default function Navbar() {
           </div>
 
           {/* Mobile Menu */}
-          <div className="md:hidden">
+          <div className="md:hidden flex items-center space-x-2">
+            <ThemeToggle />
             <Sheet>
               <SheetTrigger asChild>
                 <Button variant="ghost" size="icon">

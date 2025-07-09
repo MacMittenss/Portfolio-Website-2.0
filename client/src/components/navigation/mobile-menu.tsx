@@ -40,16 +40,7 @@ export default function MobileMenu({ navItems, onNavigate }: MobileMenuProps) {
       
       <Separator />
       
-      <div className="p-6 space-y-6">
-        {/* Theme Toggle */}
-        <div>
-          <h3 className="text-sm font-medium mb-3 text-foreground dark:text-slate-200">Theme</h3>
-          <div className="flex items-center space-x-2">
-            <ThemeToggle />
-            <span className="text-sm text-muted-foreground">Toggle theme</span>
-          </div>
-        </div>
-
+      <div className="p-6">
         {/* Social Links */}
         <div>
           <h3 className="text-sm font-medium mb-3 text-foreground dark:text-slate-200">Connect</h3>
