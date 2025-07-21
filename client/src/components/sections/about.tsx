@@ -75,7 +75,7 @@ export default function About() {
             <div className="space-y-6">
               <h3 className="text-2xl font-bold text-primary">My Tech Stack</h3>
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-8 gap-4 md:gap-6">
-                {["HTML", "CSS", "SASS", "JavaScript", "TypeScript", "React", "Express", "Tailwind"].map((tech, index) => (
+                {["HTML", "CSS", "SASS", "JavaScript", "TypeScript", "React", "Express.js", "Tailwind"].map((tech, index) => (
                   <div
                     key={tech}
                     className={`flex flex-col items-center justify-center p-4 rounded-lg bg-card/10 border border-slate-300 dark:border-slate-700 hover:border-slate-400 dark:hover:border-slate-600 transition-all duration-300 min-h-[120px] md:bg-transparent md:border-none md:p-2 md:min-h-[80px] ${
@@ -90,7 +90,7 @@ export default function About() {
                       {tech === "JavaScript" && <SiJavascript className="text-yellow-500" />}
                       {tech === "TypeScript" && <SiTypescript className="text-blue-600" />}
                       {tech === "React" && <SiReact className="text-cyan-500" />}
-                      {tech === "Express" && <SiExpress className="text-gray-700 dark:text-gray-300" />}
+                      {tech === "Express.js" && <SiExpress className="text-gray-700 dark:text-gray-300" />}
                       {tech === "Tailwind" && <SiTailwindcss className="text-cyan-400" />}
                     </div>
                     <div className="mt-auto">
