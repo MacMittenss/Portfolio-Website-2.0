@@ -94,7 +94,7 @@ export default function About() {
                       {tech === "Tailwind" && <SiTailwindcss className="text-cyan-400" />}
                     </div>
                     <div className="mt-auto w-full flex justify-center">
-                      <Badge className="bg-primary/20 text-primary border-border hover:bg-primary hover:text-primary-foreground transition-colors text-xs text-center px-1 py-1 max-w-full break-words">
+                      <Badge className="bg-primary/20 text-primary border-border hover:bg-primary hover:text-primary-foreground transition-colors text-xs text-center px-2 py-1 max-w-full inline-block">
                         {tech}
                       </Badge>
                     </div>
