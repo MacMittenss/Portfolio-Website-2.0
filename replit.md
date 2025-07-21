@@ -145,6 +145,7 @@ Changelog:
 - January 8, 2025. Updated tech stack borders in mobile view to use softer borders - slate-300 for light mode and slate-700 for dark mode
 - January 8, 2025. Moved theme toggle to navbar next to hamburger menu in mobile view for better accessibility
 - January 8, 2025. Updated tech stack section to include TypeScript and Tailwind CSS with appropriate icons and colors
+- January 8, 2025. Added Express.js to tech stack section with theme-aware gray coloring
 ```
 
 ## User Preferences
