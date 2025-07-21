@@ -3,7 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { Code, Palette, Zap, Users } from "lucide-react";
 import { useIntersectionObserver } from "@/hooks/use-intersection-observer";
 import AnimatedCounter from "@/components/ui/animated-counter";
-import { SiHtml5, SiCss3, SiSass, SiJavascript, SiReact } from "react-icons/si";
+import { SiHtml5, SiCss3, SiSass, SiJavascript, SiTypescript, SiReact, SiTailwindcss } from "react-icons/si";
 
 const highlights = [
   {
@@ -74,8 +74,8 @@ export default function About() {
 
             <div className="space-y-6">
               <h3 className="text-2xl font-bold text-primary">My Tech Stack</h3>
-              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 md:gap-8">
-                {["HTML", "CSS", "SASS", "JavaScript", "React"].map((tech, index) => (
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-4 md:gap-6">
+                {["HTML", "CSS", "SASS", "JavaScript", "TypeScript", "React", "Tailwind"].map((tech, index) => (
                   <div
                     key={tech}
                     className={`flex flex-col items-center justify-center p-4 rounded-lg bg-card/10 border border-slate-300 dark:border-slate-700 hover:border-slate-400 dark:hover:border-slate-600 transition-all duration-300 min-h-[120px] md:bg-transparent md:border-none md:p-2 md:min-h-[80px] ${
@@ -88,7 +88,9 @@ export default function About() {
                       {tech === "CSS" && <SiCss3 className="text-blue-500" />}
                       {tech === "SASS" && <SiSass className="text-pink-500" />}
                       {tech === "JavaScript" && <SiJavascript className="text-yellow-500" />}
+                      {tech === "TypeScript" && <SiTypescript className="text-blue-600" />}
                       {tech === "React" && <SiReact className="text-cyan-500" />}
+                      {tech === "Tailwind" && <SiTailwindcss className="text-cyan-400" />}
                     </div>
                     <div className="mt-auto">
                       <Badge className="bg-primary/20 text-primary border-border hover:bg-primary hover:text-primary-foreground transition-colors text-xs whitespace-nowrap">

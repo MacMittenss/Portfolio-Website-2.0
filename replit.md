@@ -144,6 +144,7 @@ Changelog:
 - January 8, 2025. Fixed hamburger menu styling - removed duplicate X button and applied rgb(226 232 240) to close button in dark mode
 - January 8, 2025. Updated tech stack borders in mobile view to use softer borders - slate-300 for light mode and slate-700 for dark mode
 - January 8, 2025. Moved theme toggle to navbar next to hamburger menu in mobile view for better accessibility
+- January 8, 2025. Updated tech stack section to include TypeScript and Tailwind CSS with appropriate icons and colors
 ```
 
 ## User Preferences
