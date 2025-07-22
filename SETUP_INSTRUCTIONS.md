@@ -7,7 +7,7 @@ Your portfolio project includes:
 - Express.js backend  
 - All project images and assets
 - Professional README.md
-- Clean configuration files (Replit references removed)
+- Clean configuration files (external platform references removed)
 
 ## 🚀 Setup Instructions
 
