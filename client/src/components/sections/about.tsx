@@ -74,7 +74,7 @@ export default function About() {
 
             <div className="space-y-6">
               <h3 className="text-2xl font-bold text-primary">My Tech Stack</h3>
-              <div className="grid grid-cols-4 gap-4 md:gap-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
                 {["HTML", "CSS", "SASS", "Tailwind", "JavaScript", "TypeScript", "React", "Express.js", "Vite"].map((tech, index) => (
                   <div
                     key={tech}
