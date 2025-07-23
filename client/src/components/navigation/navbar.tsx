@@ -148,3 +148,4 @@ export default function Navbar() {
     </nav>
   );
 }
+// Force deployment Wed Jul 23 12:20:05 AM UTC 2025
