@@ -29,45 +29,11 @@ A modern, responsive portfolio website showcasing front-end development skills a
 - **PostgreSQL** database
 - **Session management** with connect-pg-simple
 
-## 🏗️ Project Structure
-
-```
-├── client/                 # Frontend React application
-│   ├── src/
-│   │   ├── components/     # Reusable UI components
-│   │   ├── pages/          # Page components
-│   │   ├── hooks/          # Custom React hooks
-│   │   └── lib/            # Utilities and constants
-├── server/                 # Backend Express application
-├── shared/                 # Shared types and schemas
-└── dist/                   # Built application
-```
-
 ## 🚀 Getting Started
 
 ### Prerequisites
 - Node.js 20 or higher
 - npm or yarn package manager
-
-### Installation
-
-1. Clone the repository:
-```bash
-git clone https://github.com/MacMittenss/portfolio-website.git
-cd portfolio-website
-```
-
-2. Install dependencies:
-```bash
-npm install
-```
-
-3. Start the development server:
-```bash
-npm run dev
-```
-
-4. Open your browser and navigate to `http://localhost:5000`
 
 ## 📦 Available Scripts
 
@@ -100,20 +66,6 @@ Supports both light and dark themes with:
 - Persistent theme selection
 - Smooth theme transitions
 
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/MacMittenss/portfolio-website/issues).
-
-## 📞 Contact
-
-Marcus Prater - [GitHub](https://github.com/MacMittenss)
-
-Project Link: [https://github.com/MacMittenss/portfolio-website](https://github.com/MacMittenss/portfolio-website)
-
----
-
-⭐️ From [MacMittenss](https://github.com/MacMittenss)
