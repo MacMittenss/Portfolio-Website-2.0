@@ -1,6 +1,6 @@
 # Marcus Prater - Portfolio Website
 
-A modern, responsive portfolio website showcasing front-end development skills and projects.
+A modern, responsive portfolio website showcasing front-end, back-end, and fullstack development skills and projects.
 
 ## 🚀 Features
 
